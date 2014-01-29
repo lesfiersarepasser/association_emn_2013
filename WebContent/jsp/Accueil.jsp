@@ -4,9 +4,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title>Accueil</title>
 </head>
 <body>
-
+<h1>Bienvenue sur le site des adherents de l'association</h1>
+<ul>
+<li><a href="">Consulter les articles disponibles</a></li>
+<li><a href="">Consulter votre commande</a></li>
+</ul>
 </body>
 </html>
