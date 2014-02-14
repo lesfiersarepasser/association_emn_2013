@@ -1,0 +1,30 @@
+Au lieu d'avoir une table Panier et une Commande, avec une table listeCommande et une table listePanier :
+
+Une table Commande et une table listeCommande. Elles fonctionnent comme avant : 
+
+Un utilisateur peut avoir plusieurs commandes
+Une commande n'est que pour un utilisateur
+Lorsque l'utilisateur ajoute un article à sa commande, cet article est ajouté dans la table listeCommande comme cela : 
+
+IDCommande, CodeArticle, Quantite
+
+La table Commande ne stocke qu'une seule ligne par commande : 
+
+IDCommande, IDUtilisateur, Flag
+
+Le flag permet de savoir quel statut a chaque commande : 
+
+0 : panier en cours
+1 : commande validée
+
+La table commande pourra donc avoir comme contenu : 
+
+IDC, IDU, Flag
+
+1203, 12, 0
+1293, 12, 1
+2084, 2, 0
+20366, 4, 0
+...
+
+Lorsque l'utilisateur valide sa commande, on passe le flag correspondant à sa commande à 1.
