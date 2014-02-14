@@ -17,7 +17,7 @@ public class Commande implements Serializable {
 	@Id
 	@Column(name="ID")
 	private int id;
-
+	@Column(name="FLAG")
 	private int flag;
 
 	//bi-directional many-to-one association to Utilisateur

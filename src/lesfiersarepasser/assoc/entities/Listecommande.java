@@ -1,6 +1,7 @@
 package lesfiersarepasser.assoc.entities;
 
 import java.io.Serializable;
+
 import javax.persistence.*;
 
 
@@ -15,7 +16,8 @@ public class Listecommande implements Serializable {
 
 	@EmbeddedId
 	private ListecommandePK id;
-
+	
+	@Column(name="QUANTITE")
 	private int quantite;
 
 	//bi-directional many-to-one association to Article

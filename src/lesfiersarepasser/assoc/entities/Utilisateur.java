@@ -1,7 +1,9 @@
 package lesfiersarepasser.assoc.entities;
 
 import java.io.Serializable;
+
 import javax.persistence.*;
+
 import java.util.List;
 
 
@@ -15,20 +17,28 @@ public class Utilisateur implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
+	@Column(name="ID")
 	private int id;
 
+	@Column(name="ADRESSE")
 	private String adresse;
 
+	@Column(name="CODEPOSTAL")
 	private String codepostal;
 
+	@Column(name="LOGIN")
 	private String login;
 
+	@Column(name="NOM")
 	private String nom;
 
+	@Column(name="PASSWORD")
 	private String password;
 
+	@Column(name="PRENOM")
 	private String prenom;
 
+	@Column(name="VILLE")
 	private String ville;
 
 	//bi-directional many-to-one association to Commande
@@ -38,7 +48,7 @@ public class Utilisateur implements Serializable {
 	//bi-directional many-to-one association to Pay
 	@ManyToOne
 	@JoinColumn(name="IDPAYS")
-	private Pays pay;
+	private Pays pays;
 
 	public Utilisateur() {
 	}
@@ -129,12 +139,12 @@ public class Utilisateur implements Serializable {
 		return commande;
 	}
 
-	public Pays getPay() {
-		return this.pay;
+	public Pays getPays() {
+		return this.pays;
 	}
 
-	public void setPay(Pays pay) {
-		this.pay = pay;
+	public void setPays(Pays pays) {
+		this.pays = pays;
 	}
 
 }
