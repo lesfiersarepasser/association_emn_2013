@@ -1,4 +1,4 @@
-package lesfiersarepasser.assoc.dao;
+package lesfiersarepasser.assoc.entities;
 
 import java.io.Serializable;
 import javax.persistence.*;

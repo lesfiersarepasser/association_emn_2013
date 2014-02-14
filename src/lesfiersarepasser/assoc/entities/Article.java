@@ -1,4 +1,4 @@
-package lesfiersarepasser.assoc.dao;
+package lesfiersarepasser.assoc.entities;
 
 import java.io.Serializable;
 import javax.persistence.*;
@@ -15,10 +15,13 @@ public class Article implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
+	@Column(name="CODE")
 	private String code;
-
+	
+	@Column(name="NOM")
 	private String nom;
-
+	
+	@Column(name="PRIX")
 	private double prix;
 
 	//bi-directional many-to-one association to Listecommande

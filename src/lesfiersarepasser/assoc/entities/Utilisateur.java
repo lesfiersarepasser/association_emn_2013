@@ -1,4 +1,4 @@
-package lesfiersarepasser.assoc.dao;
+package lesfiersarepasser.assoc.entities;
 
 import java.io.Serializable;
 import javax.persistence.*;
@@ -38,7 +38,7 @@ public class Utilisateur implements Serializable {
 	//bi-directional many-to-one association to Pay
 	@ManyToOne
 	@JoinColumn(name="IDPAYS")
-	private Pay pay;
+	private Pays pay;
 
 	public Utilisateur() {
 	}
@@ -129,11 +129,11 @@ public class Utilisateur implements Serializable {
 		return commande;
 	}
 
-	public Pay getPay() {
+	public Pays getPay() {
 		return this.pay;
 	}
 
-	public void setPay(Pay pay) {
+	public void setPay(Pays pay) {
 		this.pay = pay;
 	}
 

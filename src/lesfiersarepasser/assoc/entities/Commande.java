@@ -1,4 +1,4 @@
-package lesfiersarepasser.assoc.dao;
+package lesfiersarepasser.assoc.entities;
 
 import java.io.Serializable;
 import javax.persistence.*;
@@ -15,6 +15,7 @@ public class Commande implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
+	@Column(name="ID")
 	private int id;
 
 	private int flag;

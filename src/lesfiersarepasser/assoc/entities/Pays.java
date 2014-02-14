@@ -1,4 +1,4 @@
-package lesfiersarepasser.assoc.dao;
+package lesfiersarepasser.assoc.entities;
 
 import java.io.Serializable;
 import javax.persistence.*;
@@ -11,8 +11,8 @@ import java.util.List;
  */
 @Entity
 @Table(name="PAYS")
-@NamedQuery(name="Pay.findAll", query="SELECT p FROM Pay p")
-public class Pay implements Serializable {
+@NamedQuery(name="Pay.findAll", query="SELECT p FROM Pays p")
+public class Pays implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
@@ -24,7 +24,7 @@ public class Pay implements Serializable {
 	@OneToMany(mappedBy="pay")
 	private List<Utilisateur> utilisateurs;
 
-	public Pay() {
+	public Pays() {
 	}
 
 	public int getId() {
