@@ -12,18 +12,25 @@
 		<table>
 			<tr>
 				<td>Identifiant</td>
-				<td>
-			<input type="text" name="login" required="required" />*
-				</td>
-				</tr>
+				<td><input type="text" name="logID" required="required" />*</td>
+			</tr>
+			
 			<tr>
 				<td>Mot de passe</td>
-				<td><input type="password" name="mdp" required="required" />*</td>
+				<td><input type="password" name="logPW" required="required" />*</td>
 			</tr>
 			<tr>
 				<td>Mot de passe (confirm)</td>
-				<td><input type="password" name="mdpconfirm"
+				<td><input type="password" name="logPWConfirm"
 					required="required" />*</td>
+			</tr>
+			<tr>
+				<td>Email</td>
+				<td><input type="email" name="logMail" required="required" />*</td>
+			</tr>
+			<tr>
+				<td>Email (confirm)</td>
+				<td><input type="email" name="logMailConfirm" required="required" />*</td>
 			</tr>
 			<tr>
 				<td>Nom de famille</td>
@@ -39,7 +46,7 @@
 			</tr>
 			<tr>
 				<td>Code postal</td>
-				<td><input type="text" name="code" pattern="[0-9]{5}" /></td>
+				<td><input type="text" name="codePostal" pattern="[0-9]{5}" /></td>
 			</tr>
 			<tr>
 				<td>Ville</td>
@@ -50,10 +57,12 @@
 				<td><select name="pays">
 						<option value="">France(FR)</option>
 						<option value="">Japon(JP)</option>
+						<option value="">Allemagne(ALL)</option>
+						<option value="">Espagne(ESP)</option>
 				</select></td>
 			</tr>
 			<tr>
-				<td><input type="submit" name="valider" value="Enregister" /></td>
+				<td><input type="submit" name="register" value="S'inscrire" /></td>
 			</tr>
 		</table>
 	</form>
