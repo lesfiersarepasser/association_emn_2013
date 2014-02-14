@@ -4,7 +4,8 @@ Une table Commande et une table listeCommande. Elles fonctionnent comme avant :
 
 Un utilisateur peut avoir plusieurs commandes
 Une commande n'est que pour un utilisateur
-Lorsque l'utilisateur ajoute un article à sa commande, cet article est ajouté dans la table listeCommande comme cela : 
+Lorsque l'utilisateur ajoute un article à sa commande,
+ cet article est ajouté dans la table listeCommande comme cela : 
 
 IDCommande, CodeArticle, Quantite
 
@@ -27,4 +28,5 @@ IDC, IDU, Flag
 20366, 4, 0
 ...
 
-Lorsque l'utilisateur valide sa commande, on passe le flag correspondant à sa commande à 1.
+Lorsque l'utilisateur valide sa commande, 
+on passe le flag correspondant à sa commande à 1.
