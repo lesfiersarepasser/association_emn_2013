@@ -12,14 +12,14 @@
 		<table>
 			<tr>
 				<td>Identifiant </td>
-				<td><input type="text" name="login" /></td>
+				<td><input type="text" name="logID" /></td>
 			</tr>
 			<tr>
 				<td>Mot de passe </td>
-				<td><input type="password" name="mdp" /></td>
+				<td><input type="password" name="logPW" /></td>
 			</tr>
 			<tr>
-				<td><input type="submit" name="valider" value="Ok" /></td>
+				<td><input type="submit" name="login" value="Connexion" /></td>
 			</tr>
 		</table>
 	</form>
