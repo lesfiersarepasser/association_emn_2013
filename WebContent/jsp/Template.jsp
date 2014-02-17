@@ -10,6 +10,8 @@
 <table>
 <tr>
 <td class="menu"><jsp:include page="/jsp/Menu.jsp" /></td>
+</tr>
+<tr>
 			<td class="page">
 				<%if(request.getParameter("page")!=null) {%> <jsp:include
 					page='<%= "/part/"+  request.getParameter("page")+".jsp" %>' /> <%}else{ %>
