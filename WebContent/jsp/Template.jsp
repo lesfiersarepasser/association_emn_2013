@@ -14,7 +14,7 @@
 <tr>
 			<td class="page">
 				<%if(request.getParameter("page")!=null) {%> <jsp:include
-					page='<%= "/part/"+  request.getParameter("page")+".jsp" %>' /> <%}else{ %>
+					page='<%= "/jsp/"+  request.getParameter("page")+".jsp" %>' /> <%}else{ %>
 				<jsp:include page="/jsp/Accueil.jsp" /> <%} %>
 			</td>
 			</tr>

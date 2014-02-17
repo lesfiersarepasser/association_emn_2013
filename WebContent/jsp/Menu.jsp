@@ -9,10 +9,10 @@
 <body>
 	<table>
 		<tr>
-			<td><a href="<%=getServletContext().getContextPath()%>/jsp/Accueil.jsp">Accueil</a></td>
-			<td><a href="<%=getServletContext().getContextPath()%>/jsp/Articles.jsp">Articles</a></td>
-			<td><a href="<%=getServletContext().getContextPath()%>/jsp/Commande.jsp">Commande</a></td>
-			<td><a href="<%=getServletContext().getContextPath()%>/jsp/Panier.jsp">Panier</a></td>
+			<td><a href="<%=getServletContext().getContextPath()%>/jsp/Template.jsp?page=Accueil">Accueil</a></td>
+			<td><a href="<%=getServletContext().getContextPath()%>/jsp/Template.jsp?page=Articles">Articles</a></td>
+			<td><a href="<%=getServletContext().getContextPath()%>/jsp/Template.jsp?page=Commande">Commande</a></td>
+			<td><a href="<%=getServletContext().getContextPath()%>/jsp/Template.jsp?page=Panier">Panier</a></td>
 			<td></td>
 			<td>Adherent :</td>
 		</tr>
