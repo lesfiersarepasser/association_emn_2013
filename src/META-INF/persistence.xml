@@ -4,7 +4,6 @@
 	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
 	<persistence-unit name="Boss_Final_TP" transaction-type="RESOURCE_LOCAL">
 		
-
 		<provider>org.hibernate.ejb.HibernatePersistence</provider>
 
 		<class>lesfiersarepasser.assoc.entities.Article</class>
@@ -14,8 +13,9 @@
 		<class>lesfiersarepasser.assoc.entities.Pays</class>
 		<class>lesfiersarepasser.assoc.entities.Utilisateur</class>
 		<properties>
+			<property name="javax.persistence.jdbc.Schema" value="APP" />
 			<property name="javax.persistence.jdbc.url" value="jdbc:derby://localhost:1527/db_assoc" />
-			<property name="javax.persistence.jdbc.user" value="root" />
+			<property name="javax.persistence.jdbc.user" value="app" />
 			<property name="javax.persistence.jdbc.driver" value="org.apache.derby.jdbc.ClientDriver" />
 			<property name="javax.persistence.jdbc.password" value="admin" />
 		</properties>

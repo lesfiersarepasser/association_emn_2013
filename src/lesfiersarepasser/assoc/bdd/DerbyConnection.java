@@ -14,14 +14,16 @@ import org.apache.derby.client.am.Connection;
 
 public class DerbyConnection {
 	
+	private static EntityManagerFactory emf = null;
+	private static EntityManager em = null;
 	
-	public static void main(String[] args) {
-		
-		EntityManagerFactory emf = Persistence.createEntityManagerFactory("Boss_Final_TP");
-		EntityManager em = emf.createEntityManager();
-		
-		
-		em.find(Article.class, "REF01");
+	
+	public static void dbConnect() {
+		emf = Persistence.createEntityManagerFactory("Boss_Final_TP");
+		em = emf.createEntityManager();
+	}
+	
+	public static void find(String id) {
 		
 	}
 	
