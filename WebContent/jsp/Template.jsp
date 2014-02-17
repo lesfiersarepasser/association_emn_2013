@@ -7,6 +7,12 @@
 <title>Insert title here</title>
 </head>
 <body>
+<td class="menu"><jsp:include page="/jsp/Menu.jsp" /></td>
+			<td class="page">
+				<%if(request.getParameter("page")!=null) {%> <jsp:include
+					page='<%= "/part/"+  request.getParameter("page")+".jsp" %>' /> <%}else{ %>
+				<jsp:include page="/jsp/Accueil.jsp" /> <%} %>
+			</td>
 
 </body>
 </html>
