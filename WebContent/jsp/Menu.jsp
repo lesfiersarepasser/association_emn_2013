@@ -9,9 +9,10 @@
 <body>
 	<table>
 		<tr>
-			<td><a href="">Accueil</a></td>
-			<td><a href="">Articles</a></td>
-			<td><a href="">Commande</a></td>
+			<td><a href="<%=getServletContext().getContextPath()%>/jsp/Accueil.jsp">Accueil</a></td>
+			<td><a href="<%=getServletContext().getContextPath()%>/jsp/Articles.jsp">Articles</a></td>
+			<td><a href="<%=getServletContext().getContextPath()%>/jsp/Commande.jsp">Commande</a></td>
+			<td><a href="<%=getServletContext().getContextPath()%>/jsp/Panier.jsp">Panier</a></td>
 			<td></td>
 			<td>Adherent :</td>
 		</tr>
