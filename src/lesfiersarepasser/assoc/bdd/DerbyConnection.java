@@ -23,9 +23,15 @@ public class DerbyConnection {
 		em = emf.createEntityManager();
 	}
 	
+	public static void connectUser(String login, String password) {
+		
+	}
+	
 	public static void find(String id) {
 		
 	}
+	
+	
 	
 	
 	

@@ -12,6 +12,7 @@
 		<class>lesfiersarepasser.assoc.entities.ListecommandePK</class>
 		<class>lesfiersarepasser.assoc.entities.Pays</class>
 		<class>lesfiersarepasser.assoc.entities.Utilisateur</class>
+		
 		<properties>
 			<property name="javax.persistence.jdbc.Schema" value="APP" />
 			<property name="javax.persistence.jdbc.url" value="jdbc:derby://localhost:1527/db_assoc" />
@@ -19,7 +20,6 @@
 			<property name="javax.persistence.jdbc.driver" value="org.apache.derby.jdbc.ClientDriver" />
 			<property name="javax.persistence.jdbc.password" value="admin" />
 		</properties>
-
-
+		
 	</persistence-unit>
 </persistence>

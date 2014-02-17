@@ -1,10 +1,13 @@
 package lesfiersarepasser.assoc.servlet;
 
 import java.io.IOException;
+
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
+import lesfiersarepasser.assoc.bdd.DerbyConnection;
 
 /**
  * Servlet implementation class Action
@@ -36,7 +39,7 @@ public class Action extends HttpServlet {
 	protected void doPost(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
 		if (request.getParameter("login") != null) {
-
+			DerbyConnection.connectUser(request.getParameter("logID"), request.getParameter("logPW"));
 		}
 		if (request.getParameter("register") != null) {
 
