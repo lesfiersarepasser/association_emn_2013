@@ -11,12 +11,13 @@
   </welcome-file-list>
   <servlet>
     <description></description>
-    <display-name>Connexion</display-name>
-    <servlet-name>Connexion</servlet-name>
-    <servlet-class>lesfiersarepasser.assoc.servlet.Connexion</servlet-class>
+    <display-name>Action</display-name>
+    <servlet-name>Action</servlet-name>
+    <servlet-class>lesfiersarepasser.assoc.servlet.Action</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>Connexion</servlet-name>
-    <url-pattern>/Connexion</url-pattern>
+    <servlet-name>Action</servlet-name>
+    <url-pattern>/action</url-pattern>
+    <url-pattern>/action/*</url-pattern>
   </servlet-mapping>
 </web-app>
