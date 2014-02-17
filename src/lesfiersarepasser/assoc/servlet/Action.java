@@ -8,6 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import lesfiersarepasser.assoc.bdd.DerbyConnection;
+import lesfiersarepasser.assoc.bean.Utilisateur;
 
 /**
  * Servlet implementation class Action
@@ -39,10 +40,13 @@ public class Action extends HttpServlet {
 	protected void doPost(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
 		if (request.getParameter("login") != null) {
-			DerbyConnection.connectUser(request.getParameter("logID"), request.getParameter("logPW"));
+			Utilisateur user = DerbyConnection.connectUser(request.getParameter("logID"), request.getParameter("logPW"));
+			if(user!=null) {
+				request.setAttribute("login", user.getIdentifiant());
+			}
 		}
 		if (request.getParameter("register") != null) {
-
+			
 		}
 	}
 

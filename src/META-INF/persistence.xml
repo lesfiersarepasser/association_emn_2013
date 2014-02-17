@@ -5,13 +5,6 @@
 	<persistence-unit name="Boss_Final_TP" transaction-type="RESOURCE_LOCAL">
 		
 		<provider>org.hibernate.ejb.HibernatePersistence</provider>
-
-		<class>lesfiersarepasser.assoc.entities.Article</class>
-		<class>lesfiersarepasser.assoc.entities.Commande</class>
-		<class>lesfiersarepasser.assoc.entities.Listecommande</class>
-		<class>lesfiersarepasser.assoc.entities.ListecommandePK</class>
-		<class>lesfiersarepasser.assoc.entities.Pays</class>
-		<class>lesfiersarepasser.assoc.entities.Utilisateur</class>
 		
 		<properties>
 			<property name="javax.persistence.jdbc.Schema" value="APP" />
